@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@layer components {
+  .mobile-menu {
+    @apply absolute flex flex-col justify-center gap-4;
+    @apply bg-yellow-400 w-full h-screen m-0 top-0 left-0 text-center;
+  }
+
+  .mobile-menu-item {
+    @apply py-3;
+  }
+
+  .mobile-menu-item-hover {
+    @apply bg-amber-300 border-b-gray-500 border-x-6;
+  }
+}
